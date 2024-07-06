@@ -5,12 +5,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
-  // Set CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
   
+
+
 app.get('/api/news', async (req, res) => {
   const { query } = req.query;
   try {
